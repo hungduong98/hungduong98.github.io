@@ -19,6 +19,12 @@ img {
   height: auto;
 }
 
+.responsivevid{
+      width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
 .caption{
     font-size: 12px;
     font-style: italic;

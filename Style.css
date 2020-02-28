@@ -13,6 +13,12 @@ img {
   margin-right: auto;
 }
 
+.responsive{
+      width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
 .caption{
     font-size: 12px;
     font-style: italic;

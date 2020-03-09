@@ -352,7 +352,7 @@ p {
 
 @media only screen and (max-width: 450px) {
   .collapsible, .collapsible:after, .content {margin-left:0%; margin-right: 0%;}
-  .para, .ul {margin-left:0%; margin-right: 0%;}
+  .para, .ul, p, .abstract, h4 {margin-left:0%; margin-right: 0%;}
   .nice-line {margin-left:0%; margin-right:0%;}}
   /*.dropbtn {font-size: 9px; width: 100%}
   .dropdown {width: 100%;}

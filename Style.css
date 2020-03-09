@@ -350,23 +350,6 @@ p {
   background-color: #ffffff;
 }
 
-@media only screen and (max-width: 450px) {
-    .collapsible, .collapsible:after, .content {margin-left:0%; margin-right: 0%;}
-    .para, .ul, p, .abstract, h4 {margin-left:0%; margin-right: 0%;}
-    .nice-line {margin-left:0%; margin-right:0%;}
-    .list, .listresearch, blockquote {margin-left: 10%; margin-right: 10%;}
-    .list, .listresearch{margin-left: 5%; margin-right: 5%;}
-}
-  /*.dropbtn {font-size: 9px; width: 100%}
-  .dropdown {width: 100%;}
-  .dropdown-content{position: relative;}
-  .dropdown-content a
-  {border-right: 0px solid #555;
-  border-left: 0px solid #555;
-  border-top: 0px solid #555;
-  border-bottom: 1px solid #555;
-  font-size: 9px;}*/
-}
 
 /* COLUMNS FOR ABSTRACT */
 * {
@@ -398,6 +381,7 @@ p {
   margin: auto;
   border: 1px solid #73AD21;
 }
+
 /* COLUMNS FOR ABSTRACT */
 
 .card {
@@ -409,4 +393,23 @@ p {
 .thumbnail {
   width: 100%;
   padding: 20px;
+}
+
+@media only screen and (max-width: 450px) {
+    .collapsible, .collapsible:after, .content {margin-left:0%; margin-right: 0%;}
+    .para, .ul, p, .abstract, h4 {margin-left:0%; margin-right: 0%;}
+    .nice-line {margin-left:0%; margin-right:0%;}
+    .list, .listresearch, blockquote {margin-left: 10%; margin-right: 10%;}
+    .list, .listresearch{margin-left: 5%; margin-right: 5%;}
+    .left, .right {width: 100%}
+}
+  /*.dropbtn {font-size: 9px; width: 100%}
+  .dropdown {width: 100%;}
+  .dropdown-content{position: relative;}
+  .dropdown-content a
+  {border-right: 0px solid #555;
+  border-left: 0px solid #555;
+  border-top: 0px solid #555;
+  border-bottom: 1px solid #555;
+  font-size: 9px;}*/
 }

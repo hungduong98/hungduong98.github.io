@@ -396,3 +396,14 @@ p {
   border: 1px solid #73AD21;
 }
 /* COLUMNS FOR ABSTRACT */
+
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.thumbnail {
+  width: 100%;
+  padding: 20px;
+}

@@ -355,7 +355,7 @@ p {
     .para, .ul, p, .abstract, h4 {margin-left:0%; margin-right: 0%;}
     .nice-line {margin-left:0%; margin-right:0%;}
     .list, .listresearch, blockquote {margin-left: 10%; margin-right: 10%;}
-    .list, .listresearch{margin-left: 5%; margin-right: 10%;}
+    .list, .listresearch{margin-left: 5%; margin-right: 5%;}
 }
   /*.dropbtn {font-size: 9px; width: 100%}
   .dropdown {width: 100%;}

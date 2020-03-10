@@ -25,6 +25,12 @@ img {
   height: auto;
 }
 
+.responsiveblogimg{
+    width: 100%;
+  max-width: 550px;
+  height: auto;
+}
+
 .responsivevid{
       width: 100%;
   max-width: 600px;
@@ -36,6 +42,7 @@ img {
     font-style: italic;
     text-align: center;
     font-family: 'Palatino', serif;
+    margin-top: 4px;
 }
 
 img:hover {
@@ -109,9 +116,9 @@ blockquote{
 
 
 h5  {
-  text-align: center;
-  font-size: 12px;
-  font-weight: normal;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 h6  {
@@ -382,18 +389,45 @@ p {
   border: 1px solid #73AD21;
 }
 
+.end {
+    margin-bottom: 50px;
+}
+
 /* COLUMNS FOR ABSTRACT */
 
 .card {
-   background-color: white;
-   padding: 20px;
-   margin-top: 20px;
+    background-color: white;
+    padding: 7px;
+    margin-top: 10px;
+    border: 1px solid #73AD21;
+    border-radius: 7px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.textthumbnail {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
 }
 
 .thumbnail {
   width: 100%;
-  padding: 20px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 7px;
 }
+
+@media only screen and (max-width: 700px) {
+    .collapsible, .collapsible:after, .content {margin-left:0%; margin-right: 0%;}
+    .para, .ul, p, .abstract, h4 {margin-left:0%; margin-right: 0%;}
+    .nice-line {margin-left:0%; margin-right:0%;}
+    .list, .listresearch, blockquote {margin-left: 10%; margin-right: 10%;}
+    .list, .listresearch{margin-left: 5%; margin-right: 5%;}
+    .left, .right {width: 100%;}
+    .card {margin-left: 0%; width: 100%;}
+
 
 @media only screen and (max-width: 450px) {
     .collapsible, .collapsible:after, .content {margin-left:0%; margin-right: 0%;}
@@ -401,7 +435,8 @@ p {
     .nice-line {margin-left:0%; margin-right:0%;}
     .list, .listresearch, blockquote {margin-left: 10%; margin-right: 10%;}
     .list, .listresearch{margin-left: 5%; margin-right: 5%;}
-    .left, .right {width: 100%}
+    .left, .right {width: 100%;}
+    .card {margin-left: 0%; width: 100%;}
 }
   /*.dropbtn {font-size: 9px; width: 100%}
   .dropdown {width: 100%;}

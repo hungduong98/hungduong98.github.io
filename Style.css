@@ -61,7 +61,7 @@ h2  {
   text-align: left;
   margin-left: 20%;
   margin-right: 20%;
-}
+} /* use for various headings in reasearch, blogs*/
 
 h3  {
   font-size: 17px;
@@ -75,7 +75,7 @@ h4{
   font-weight: 600;
     margin-left: 25%;
     margin-right: 25%;
-}
+} /* use for article titles in reasearch, blogs*/
 
 blockquote{
     margin-left: 25%;
@@ -117,9 +117,9 @@ blockquote{
 
 h5  {
   text-align: left;
-  font-size: 20px;
-  font-weight: bold;
-}
+  font-size: 12px;
+  font-weight: normal;
+} /* use for last update*/
 
 h6  {
   margin-left: 5%;

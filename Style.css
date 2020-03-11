@@ -43,6 +43,8 @@ img {
     text-align: center;
     font-family: 'Palatino', serif;
     margin-top: 4px;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 img:hover {
@@ -427,7 +429,8 @@ p {
     .list, .listresearch{margin-left: 5%; margin-right: 5%;}
     .left, .right {width: 100%;}
     .card {margin-left: 0%; width: 100%;}
-
+    .caption {margin-left: 20%; margin-right: 20%;}
+}
 
 @media only screen and (max-width: 450px) {
     .collapsible, .collapsible:after, .content {margin-left:0%; margin-right: 0%;}

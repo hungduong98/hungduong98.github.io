@@ -1,0 +1,721 @@
+\documentclass{report}
+\usepackage{fixltx2e}
+\usepackage{hyperref}
+\usepackage{chemfig}
+\usepackage{chemmacros}
+	\chemsetup{modules = all}
+\usepackage{modiagram}
+\usepackage{csquotes}
+\usepackage{caption}
+\usepackage{float}
+
+\author{Quang Hung Duong\\
+Monash University\\
+Pharmacy and Pharmaceutical Science} 
+\title{\huge How Medicines Work 1}
+\renewcommand{\thesection}{\arabic{section}}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+\listoffigures
+\newpage
+
+\section{Acknowledgement and Disclaimer}
+	\textit{"How Medicine Work 1"} is a compilation of my studying of this unit during my first year. This text is an introductory resource targeting those who are new to pharmacy, especially, but not limited to, at Monash since the framework of this text is based upon the unit structure developed by Monash University. I had no intention of plagiarizing or violate copyrights. I made this study guide solely for the purpose of sharing study tips with other students, as much as I wanted to learn \LaTeX. I will not guarantee the accuracy of the information provided, which should only be used as a guide. Any inquiry please pop me an email at \href{mailto:qduo0002@student.monash.edu}{qduo0002@student.monash.edu}. \\
+	
+	You may encounter new concepts while reading, thus I will try to review and explain as much as possible. Certain (mostly basic) areas of medicinal chemistry will be covered, including chemistry bonding, functional groups, acid and base, organic chemistry reaction mechanism, and a bit of pharmacokinetics. \\
+	
+	Before starting the content, I just want to thank Huan Q. Bui (Colby College) for giving me the inspiration to get into writing this. If you are interested in Mathematics and Physics, make sure you check out his website: \href{http://huanqbui.com/}{huanqbui.com}. \\
+	
+	G'day and enjoy!
+\newpage
+	
+\section{Introduction to How Medicines Work}
+	\subsection{What are medicines?}
+		How can a medication exert its effect on the body? How a medication "know" the way to the site of action? Why do we have so many different formulation? These questions can be answered, but not in an easy way. We first need to know what medicines are and their principles. \\
+	
+		Most commonly used formulations of medicines are tablets or capsules, although there are virtually countless other formulations, designed specifically for each disease or simply to achieve certain desired pharmacokinetic properties. \\
+		
+		There are two main ingredients in a drug formulation: active and non-active.
+		\begin{itemize}
+			\item{The active ingredients, or the drugs, are usually developed to interact with specific proteins to exert their therapeutic effects. The drugs can reach the target site via the bloodstream or can be applied directly.}
+			\item{The non-active ingredients, although not contributing to the drug's therapeutics, provide a practical and efficient means of transporting the drugs. These ingredients may play an important role in altering a medicine's pharmacokinetics, extended-release for instance.}
+		\end{itemize}
+		
+	\subsection{The principles}
+		We use the acronym ADME(T) to describe the four most important principles of medications:
+		\begin{itemize}
+			\item{Absorption}
+			\item{Distribution}
+			\item{Metabolism}
+			\item{Elimination}
+			\item{Toxicity}
+		\end{itemize}
+		
+		Given this simple example: When an athlete is injured with a sprained ankle, we try giving him some Nurofen. After 3 hours, he no longer feels the pain and is able to play sport again. \\
+		
+		When the Nurofen tablet is swallowed, it reaches the stomach, disintegrates into small lumps of drugs, and dissolves into individual drug molecules. This is the $Absorption$ phase. \\
+		
+		Drug molecules are absorbed in the stomach and the intestine into the bloodstream. The drug is now everywhere in the body, however, its effect is only observed at the sprained ankle since there are specific pain modulators present on site. This is the $Distribution$ phase. \\
+		
+		The liver has specific enzymes that can convert the drug molecules into different compounds. The drug, despite being deliberately administered into the body, is still considered a foreign substance which needs to be removed. The compounds that the liver makes from the original drug, called metabolites, can be eliminated from the body by the kidney or via fecal matter. These are the $Metabolism$ and $Elimination$ phases. \\
+		
+		We sometimes consider $Toxicity$ as a part of drug action process. Drug toxicity can be from either the drug itself, or its metabolites. \\
+		
+		Of course ADME can be applied to many more complicated cases, systematically, even for locally applied medicines, controlled-released formulations, etc. The physicochemical properties of the drug molecules heavily determine ADME of the medication. \\
+
+\newpage
+
+\section{Chemical bonds, structures and shapes}
+	Most pharmaceutical products are organic compounds, so they have certain organic "structures". These structures determine how the drug interact with its target. \\
+	
+	A structures is made of atoms, each consists of a nucleus at the core and orbiting electron(s). These electrons make bonds to link the atoms together to make a framework which has definite physicochemical properties. There are a few different types of bonds though, depending on the nature of each atom's electron shell, which will be discussed later in this chapter. \\
+	
+	\subsection{The electron clouds - Orbitals}
+		Assumed that we all know the planetary electron model developed by \textit{Ernest Rutherford} or by \textit{Niels Bohr}, this is true in some special cases but not applicable to many complex situations. We need to know that there is another well-defined electron model: the orbitals. \\
+		
+		\blockquote{An orbital is the space where there is 90-95\% chance of observing the electron (or you can say the electron spends 90-95\% of its time in that space). The orbital shapes are determine by plotting the square of the wave function   ($\psi^2$) onto a 3-dimensional space.}
+		
+		There are two main orbital shapes, commonly used in organic chemistry:
+		\begin{itemize}
+			\item{The $s$ orbital: spherical} \quad
+				\orbital{s}
+			\item{The $p$ orbital: strange-looking dumbbell} \quad
+				\orbital{p}	
+		\end{itemize}
+We will encounter the concept of orbitals again later in this chapter.
+
+	\subsection{Lewis structure and valence bond theory - Covalent bonds}
+		In chemistry, the valance, or outermost shell is the only and most important since it shows the reactivity of an element (the inner shells are too stable to be contributing in any chemical reaction). \\
+		
+		The Lewis structure depicts the valance shell by showing all electrons in that shell using dots, each dot for an electron. For example, the chlorine atom can be drawn as 
+		\chlewis{0.}{Cl} or 
+		\chlewis{0.,90,180, 270}{Cl} 
+		for a full valance shell. The double dots can be replaced with a line, thus there is another way to draw chlorine atom: 
+		\chlewis{0. 90| 180| 270|}{Cl}. \\
+		
+		Such bond is called sigma ($\sigma$) bond. This bond connects directly the two atoms, meaning the electrons forming the bonds are at between the atoms, and can be rotated without breaking them (imagine a dough roller with two ends are the atoms). \\
+		
+		With the example of HCl, back to the orbitals, the $1s$ orbital of H atom overlaps with the $2p_x$ orbital of Cl atom to form a $\sigma$ bond:
+		\begin{center}
+			\vspace{5mm}
+			\setbondoffset{0pt}
+			\chemsetup[orbital]{
+			overlay ,
+			opacity = .75 ,
+			p/scale = 1.6 ,
+			s/color = blue!50 ,
+			s/scale = 1.6
+			}
+			\chemfig{
+			\orbital{s}
+			-{\orbital[angle=0]{p}}
+			}
+			\vspace{5mm}
+		\end{center}
+		
+		Majority of nonmetallic atoms in organic compounds connect to each other using covalent bond, meaning two atoms share certain number of electrons to form a bond to reach an octet (eight electrons in the valence shell). Why eight? We know that noble gas neon \isotope{Ne} is stable since the outer shell has reached eight electrons (the shell is saturated and is not like to react). Other atoms in the same row of the periodic table have the tendency toward \isotope{Ne} electron configuration to reach its stablest state, thus explaining the octet. This is the foundation of valence bond theory. \\
+		
+		Electron pairs (pairs of dots) are more stable than unpaired electron (single dots) due to its spin energy (quantum theory), therefore two atoms are most likely to use two single electrons to form a bond, one electron form each atom. A simple diagram hopefully will explain:
+		\begin{center}		
+			\chlewis{0.}{H} \qquad
+			+ \qquad
+			\chlewis{0, 90, 180., 270}{Cl} \qquad
+			\ch{->} \qquad
+			\chlewis{0.}{H} \chlewis{0, 90, 180., 270}{Cl}
+		\end{center}
+		
+		We can see here the hydrogen and chlorine atom both share a single electron to form a shared bond. Hydrogen reaches the \isotope{He}'s electron configuration (a noble gas) \footnote{not every atom should reach neon's configuration. A simple rule: an atom will reach the noble gas' configuration closest to it in the periodic table.}, and chlorine reaches \isotope{Ne}'s electron configuration (another noble gas). Again, a pair of electron and be replace with a line:
+		\begin{center}
+			\chlewis{0.}{H} \qquad
+			+ \qquad
+			\chlewis{0, 90, 180., 270}{Cl} \qquad
+			\ch{->} \qquad
+			\chemfig{H-\lewis{0:2:6:,Cl}}
+		\end{center}
+		
+		Depending on the atom, each should have a certain number of bonds they can form with other atoms:
+		\begin{center}
+			\chemname{\chemfig{H-}}{One bond with no lone pairs} \hfill
+			\chemname{\chemfig{\chlewis{90,180,270}{F}-}}{One bond with three lone pairs} \hfill
+			\chemname{\chemfig{-\chlewis{90,270}{O}-}}{Two bonds with two lone pairs} \\
+			
+			\chemname{\chemfig{-\chlewis{90}{N}(-[:-90])-}}{Three bonds with one lone pair} \hfill
+			\chemname{\chemfig{-C((-[:90])-[:-90])-}}{Four bonds with no lone pairs}
+		\end{center}
+		
+		The lone pairs are not at all useless, but contribute further to functional groups' reactivity, thus should be drawn whenever there is a related reaction, e.g. acid-base reaction.
+		
+		\subsection{How to draw chemical structures}
+			\subsubsection{Lewis structure}
+				We have been introduced with Lewis structure, though the first does not mean the simplest. To draw a huge amount of dots is not practical, especially with larger molecules. Lewis structure should solely be used for theoretical purposes.
+			\subsubsection{Line-bond structures - Kekule structures}
+				By replacing the paired dots connecting the two atoms, and by eliminating the irrelevant lone pairs (not contributing to reactions), we can draw the structure more efficiently:
+				\begin{center}
+					\chemfig{\chlewis{0.}{H}-[,0.5,,,draw=none]((\chlewis{0.,90.,180.,270.}{C}-[:90,0.5,,,draw=none]\chlewis{270.}{H})-[:-90,0.5,,,draw=none]\chlewis{90.}{H})-[,0.6,,,draw=none]\chlewis{0,90,180.,270}{Cl}} \hfill
+					to be \hfill
+					\chemfig{H-C((-[:90]H)-[:-90]H)-\chlewis{0,90,270}{Cl}} \hfill
+					or \hfill
+					\chemfig{H_3C-\chlewis{0,90,270}{Cl}}
+				\end{center}
+			
+			\subsubsection{Skeletal structures - Stickmen}
+				The most efficient way of drawing organic structures is to draw skeletal structures. This requires the removal of writing H and C (in the carbon framework):
+				\begin{figure}[H]
+					\centering
+					\captionsetup{justification=centering, margin=2cm}
+						\chemfig{-[::30]-[:-30]} \qquad
+						\ch{->} \qquad
+						\chemfig{-[::30]C((-[:120]H)-[:70]H)-[:-30]}
+						\caption{The visualization of non-depicted hydrogen atoms in a simple skeletal structure.\label{fig:number_h}}
+					\end{figure}
+				\begin{itemize}
+					\item{C atoms become the intersection of two lines or where the line ends}
+					\item{H atoms are not shown, but since all C atoms have four bonds, the number of H atoms on a specific C atom should be calculated as: $Number\:of\:H = 4 - Number\:of\:lines\:connected$.} (Figure \ref{fig:number_h})
+					\item{H connecting to atoms other than C should be shown, e.g. NH\textsubscript{2}, OH.}
+					\item{Sometimes there are groups of atoms (functional groups) which should be shown together, e.g. COOH}
+				\end{itemize}
+			
+		\subsection{Hybridization}
+			Some atoms can form bonds without undergoing hybridization, but many cannot. Hybridization occurs in order to achieve a more favorable energy state for the atoms and subsequently, the molecule. This can be explained by this simple energy diagram:
+			\begin{figure}[H]
+			\centering
+			\captionsetup{justification=centering, margin=2cm}
+			\begin{MOdiagram}
+				\EnergyAxis[title=$E$]
+			\end{MOdiagram}
+				\begin{MOdiagram}[labels]
+					\atom{right}{
+					2s = {0; up} ,
+					2p = {1; up, up, up}
+					}
+				\end{MOdiagram}
+				\hfill
+				\ch{->[Hybridization]}
+				\hfill
+				\begin{MOdiagram}[distance=1cm]
+					\atom{left}{2s =  {1; up}}
+					\atom{right}{2p = {1; up, up, up}}
+				\end{MOdiagram}
+			\caption{The mixing (hybridization) of the $2s$ and $2p$ orbitals to achieve lower overall energy.}
+			\end{figure}
+			
+			Given that the C atomic electron configuration is $1s^2 2s^2 2p^2$, the fusion between the $2s$ and the $2p$ orbitals forms 4 identical orbitals with lowered energy compared to one $2s$ orbital and three $2p$ orbitals. \\
+			\begin{figure}[H]
+			\centering
+			\captionsetup{justification=centering, margin=2cm}
+			\vspace{5mm}
+				\setbondoffset{0pt}
+				\chemsetup[orbital]{
+				overlay ,
+				opacity = .7 ,
+				p/scale = 1.6 ,
+				s/color = blue!50 ,
+				s/scale = 1.6
+				}
+				\chemfig{[,0.1,,,draw=none]-{
+				\orbital{s}
+				\orbital[angle=0]{p}
+				\orbital[angle=90]{p}
+				\orbital[angle=40]{p}}
+				} \hfill
+			\ch{->[Hybridization]} \hfill
+			\vspace{5mm}
+				\setbondoffset{0pt}
+				\chemsetup[orbital]{
+				overlay ,
+				opacity = .7 ,
+				p/scale = 1.6 ,
+				s/color = blue!50 ,
+				s/scale = 1.6
+				}
+				\chemfig{[,0.1,,,draw=none]-{
+				\orbital[angle=90, scale = 1.6]{sp3}
+				\orbital[angle=15, scale = 1.6]{sp3}
+				\orbital[angle=-40, scale = 1.6]{sp3}
+				\orbital[angle=205, scale = 1.6]{sp3}}
+				} \vspace{5mm}
+			\caption{Hybridization of one $2s$ orbital and three $2p$ orbitals results in four identical $sp^3$ hybrid orbitals.\label{fig:s}}
+			
+			\end{figure}
+			
+			There are three basic hybridization forms: $sp^3$, $sp^2$, and $sp$.
+			
+			\subsubsection{$sp^3$ hybridization}
+			We have been introduced with $sp^3$ hybridization in figure \ref{fig:s}. The superscript number 3 shows that the hybridization if made from one $s$ orbital and three $p$ orbital. \\
+			
+			The four newly-created hybrid orbitals each contains one unpaired electron (since activated C atom has 4 unpair electrons), ready to form 4 $\sigma$ bonds. They can only form $\sigma$ bonds since the overlap is head-to-head (you will learn about side overlapping in the next type of hybridizations). \\
+			
+			How about non-carbon atoms, such as \isotope{N} or \isotope{O}? Of course they can still undergo hybridization, but some hybrid orbital will have a pair of electron rather an unpair electron:
+			\begin{figure}[H]
+			\centering
+			\captionsetup{justification=centering, margin=2cm}
+				\begin{MOdiagram}
+					\EnergyAxis[title=$E$]
+				\end{MOdiagram}
+				\begin{MOdiagram}[labels]
+					\atom{right}{
+					2s = {0; up} ,
+					2p = {1; up, up, pair}
+					}
+				\end{MOdiagram}
+				\hfill
+				\ch{->[Hybridization]}
+				\hfill
+				\begin{MOdiagram}[distance=1cm]
+					\atom{left}{2s =  {1; up}} ,
+					\atom{right}{2p = {1; up, up, pair}}
+				\end{MOdiagram}
+			\caption{The $sp^3$ hybridization of the Oxygen atom (\isotope{O}). Notice that a new orbital has an electron pair, resulting from the pair initially resides in the $2p_z$ orbital.}
+			\end{figure}
+			
+			The final three dimensional of an $sp^3$ hybridization is a tetrahedral, with bond angle of 109.5$^\circ$. To draw a 3D configuration, we use a solid wedge to show a closer (to us) atom, and a dashed wedge to show farther (from us) atoms:
+			\begin{figure}[H]
+			\centering
+			\captionsetup{justification=centering, margin=2cm}
+				\chemfig{H-[:30]((-[:90]H)<[:-50]H)<:[:-15]H}
+			\caption{The solid wedge depicts atoms closer to us, and the dashed wedge depicts atoms farther from us.}
+			\end{figure}
+			
+			\subsubsection{$sp^2$ hybridization}
+				As the name suggested, this type of hybridization requires one $s$ orbital and two $p$ orbitals. These three new form a triangular plane with bond angle of 120$^\circ$. If the $p_x$ and $p_y$ orbitals are used, the plane formed is called $xy$. Since not all $p$ orbitals undergo hybridization, the unused orbital remains a $p_z$ orbital and positions perpendicularly to the $xy$ plane.
+				\begin{figure}[H]
+				\centering
+				\captionsetup{justification=centering, margin=2cm}
+			\vspace{5mm}
+				\setbondoffset{0pt}
+				\chemsetup[orbital]{
+				overlay ,
+				opacity = .7 ,
+				p/scale = 1.6 ,
+				s/color = blue!50 ,
+				s/scale = 1.6
+				}
+				\chemfig{[,0.1,,,draw=none]-{
+				\orbital{s}
+				\orbital[angle=0]{p}
+				\orbital[angle=90]{p}
+				\orbital[angle=40]{p}}
+				} \hfill
+				\ch{->[Hybridization]} \hfill
+			\vspace{5mm}
+				\setbondoffset{0pt}
+				\chemsetup[orbital]{
+				overlay ,
+				opacity = .7 ,
+				p/scale = 1.6 ,
+				s/color = blue!50 ,
+				s/scale = 1.6
+				}
+				\chemfig{[,0.1,,,draw=none]-{
+				\orbital[angle=90, color = red!50]{p}
+				\orbital[angle=15, scale = 1.6]{sp3}
+				\orbital[angle=-20, scale = 1.6]{sp3}
+				\orbital[angle=180, scale = 1.6]{sp3}}
+				} \vspace{5mm}
+			\caption{Hybridization of one $s$ orbital and two $p$ orbitals results in three identical $sp^2$ hybrid orbitals. The remaining $p$ orbital lies perpendicularly to the hybridized orbitals.}
+				\end{figure}
+				
+				The final 3D configuration should look like this:
+				\begin{figure}[H]
+			\centering
+			\captionsetup{justification=centering, margin=2cm}
+				\chemfig{H-(((-[:90]H)-[:-90]H)<[:-20]H)<:[:20]H}
+			\caption{Three dimensional configuration of $sp^2$ hybridization}
+			\end{figure}
+			
+				The electron in non-hybridized $p$ orbital form bonds in a different fashion compared to $\sigma$ bonds. Since the orientation of this orbital is not optimal for head-to-head over lap, two parallel $p$ orbitals can undergo side overlapping. Such bond is called $\pi$ bond. They are less stable than $\sigma$ bond due to its ineffective overlapping:
+			\begin{center}
+			\vspace{5mm}
+			\setbondoffset{0pt}
+			\chemsetup[orbital]{
+			overlay ,
+			opacity = .75 ,
+			p/scale = 1.6 ,
+			s/color = blue!50 ,
+			s/scale = 1.6
+			}
+			\chemfig{
+			\orbital{p}
+			-{\orbital[angle=270]{p}}
+			}
+			\vspace{7mm}
+			\end{center}
+			
+				A double double bond consists of one $\sigma$ bond and one $\pi$ bond. Many questions will ask you to count the number of bonds, and it is important to know that a double bond actually consists of two bond types, not just one $\pi$ bond.
+			\begin{figure}[H]
+			\centering
+			\captionsetup{justification=centering, margin=2cm}
+			\vspace{8mm}
+			\setbondoffset{0pt}
+			\chemsetup[orbital]{
+			overlay ,
+			opacity = .75 ,
+			p/scale = 1.6 ,
+			s/color = blue!50 ,
+			s/scale = 1.6
+			}
+			\chemfig{
+			{\orbital{p}
+			\orbital[angle = 0, color = red!50, scale = 1.6]{sp3}}
+			-{\orbital[angle=270]{p}
+			\orbital[angle = 180, color = red!50, scale = 1.6]{sp3}}
+			}
+			\vspace{7mm}
+			\caption{The $\sigma$ bond is created from two$sp^2$ orbitals (red). The $\pi$ bond is created from two $p_z$ orbitals (black).}
+			\end{figure}
+			
+				Imagine $\pi$ bond forms a plane, it is intuitive to know that this bond cannot be rotated without breaking.
+			
+			\subsubsection{$sp$ hybridization}
+				Similarly, the last basic hybridization type employs one $s$ orbital and one $p$ orbital to form two linear hybridized $sp$ bonds. The two remaining $p$ orbitals lie perpendicular to each other and to the $sp$ hybridized orbitals.
+				
+				\begin{figure}[H]
+				\centering
+				\captionsetup{justification=centering, margin=2cm}
+			\vspace{5mm}
+				\setbondoffset{0pt}
+				\chemsetup[orbital]{
+				overlay ,
+				opacity = .7 ,
+				p/scale = 1.6 ,
+				s/color = blue!50 ,
+				s/scale = 1.6
+				}
+				\chemfig{[,0.1,,,draw=none]-{
+				\orbital{s}
+				\orbital[angle=0]{p}
+				\orbital[angle=90]{p}
+				\orbital[angle=40]{p}}
+				} \hfill
+				\ch{->[Hybridization]} \hfill
+			\vspace{5mm}
+				\setbondoffset{0pt}
+				\chemsetup[orbital]{
+				overlay ,
+				opacity = .7 ,
+				p/scale = 1.6 ,
+				s/color = blue!50 ,
+				s/scale = 1.6
+				}
+				\chemfig{[,0.1,,,draw=none]-{
+				\orbital[angle=90, color = red!50]{p}
+				\orbital[angle=40, color = blue!50]{p}
+				\orbital[angle=0, scale = 1.6]{sp3}
+				\orbital[angle=180, scale = 1.6]{sp3}}
+				} \vspace{5mm}
+			\caption{Hybridization of one $s$ orbital and one $p$ orbitals results in three identical $sp^2$ hybrid orbitals. The remaining two $p$ orbitals lie perpendicularly to the hybridized orbitals and to each other.}
+				\end{figure}
+				
+				The final 3D configuration should look like this:
+				\begin{figure}[H]
+			\centering
+			\captionsetup{justification=centering, margin=2cm}
+				\chemfig{H-((((-[:90]H)-[:-90]H)<[:210]H)<:[:30]H)-H}
+			\caption{Three dimensional configuration of $sp$ hybridization}
+			\end{figure}
+			
+				The $sp$ hybridized atoms are capable of forming triple bonds, which consist of one $\sigma$ bond and two $\pi$ bonds. Again, one triple bond actually consists of three individual bonds, so please be careful while counting the number of bonds.
+
+		\subsection{Electronegativity and polarity of bonds}
+		 Electronegativity (symbol $\chi$) is the ability of an atom to attract the electrons towards itself. Electronegativity is shown as a numerical value, expressed relative to that of the most electronegative element, fluorine, whose value is arbitrarily 4. \\
+		 
+		 Due to the differences in electronegativities of different atoms, the electrons in a bond may not distribute evenly. This is called polarity, and such bond is called \textit{polar covalent bond}. The electrons in a bond are more attracted towards a more electronegative atom, causing a \textit{partial negative charge} ($\delta^-$) on that atom and simultaneously, a \textit{partial positive charge} ($\delta^+$) on the other atom.
+		 \begin{figure}[H]
+		 \centering
+		 \captionsetup{justification=centering, margin=2cm}
+		 	\chemfig{\chemabove{H}{\scriptstyle\color{red}\delta{+}}-\chemabove{Cl}{\scriptstyle\color{red}\delta{-}}}
+			\caption{Polar covalent bond. Electrons are attracted toward the Cl atom due to its higher electronegativity, causing a $\delta^+$ at the H atom.}
+		 \end{figure}
+		 
+		 For practical purposes, the difference between two electronegativity values ($\Delta_\chi$) should be significant to be considered polar:
+		 \begin{itemize}
+		 	\item{$\Delta_\chi$ less than 0.4 is considered to be non-polar.}
+			\item{$\Delta_\chi$ from 0.5 to 1.7 are considered polar covalent.}
+			\item{$\Delta_\chi$ greater than 1.7 is considered ionic. This means one atom has a full extra electron from the other atom, resulting in not a partial charge, but a full charge.}
+		 \end{itemize}
+		 	
+		 \begin{figure}[H]
+		 \centering
+		 \captionsetup{justification=centering, margin=2cm}
+		 	\chemfig{\chemabove{Na}{\scriptstyle\color{red}\oplus}-[,,,,draw=none]\chemabove{Cl}{\scriptstyle\color{red}\ominus}}
+			\caption{Cl has a significantly greater electronegativity comparing to Na, thus "steal" one full electron from Na atom, leading to a full negative charge on Cl and full positive charge on Na. The two atoms bond to each other by static force (opposite charges).}
+		 \end{figure}
+		 
+		 Although C and H have different electronegativity values, the C-H bonds are still considered non-polar since the difference is not significant. \\
+		 
+		 The polarity of a polar covalent bond can be shown using a \textit{dipole} arrow, moving from $\delta^+$ to $\delta^-$: 
+		\begin{center}
+		 \chemfig{
+		 	\chemabove[3pt]{O}{\scriptstyle\delta{-}}(-[::270,0.5,,,draw=none]@{c})-
+			\chemabove[3pt]{H}{\scriptstyle\delta{+}}(-[::270,0.5,,,draw=none]@{d})
+			}
+		\chemmove{
+		\draw[|->, very thick] (d)--(c);
+		}
+          	\end{center}
+	
+		Each dipole contributes to the overall polarity of the molecule, which can be calculate from the vector sum of all the individual bond dipoles and lone pair. The net molecular polarity is measured by a quantity called the dipole moment $\mu$. This is defined as the magnitude of the partial charge $Q$ at either end of the overall molecular dipole multiplied by the distance $r$ between the charges: $\mu = Q \times r$. \\
+		
+		You will not get to know how to calculate complex dipole moment, however, there is a simple rule: if a molecule is symmetrical in some way, it is likely to have a dipole moment of 0. For example:
+		\begin{center}
+			\chemfig{Cl-[:30]((-[:90]Cl)<[:-50]Cl)<:[:-15]Cl}
+			\qquad
+			\chemfig{O=C=O}
+		\end{center}
+		Although the C-Cl and C-O bonds are polar, the symmetry of the whole molecule eliminates the overall polarity. \\
+		
+		The polarity of a molecules also predicts the solubility in water (a polar solvent), but is not the only factor.\\
+		
+		\blockquote{\textit{A rule to be used cautiously: polar molecules are soluble in polar solvent, and non-polar molecules are soluble in non-polar-solvent.}}
+		
+		\subsection{Charges}
+		Up to now we are still arranging the atoms in such a way that each element has an appropriate number of bonds (C has four bonds, N has three, O has two, and H and halogens have one). However, we may encounter such cases:
+		\begin{center}
+			\chemname{\chemfig{H-[:30]N((-[:90]H)<[:-50]H)<:[:-15]H}}{Ammonium}
+		\end{center}
+		
+		The center N atom has four bonds, how can this be possible? In fact, the above molecule is made from one ammonia molecule ($NH_3$) and one proton ($H^+$). The final product should have a positive charge. Precisely, the N atom, which has an abnormal number of bonds, has a formal charge of $+1$.
+		\begin{center}
+			\chemname{\chemfig{H-[:30]\chemabove{N}{\scriptstyle\hspace{4mm}\oplus}((-[:90]H)<[:-50]H)<:[:-15]H}}{Ammonium}
+		\end{center}
+	
+		So how do we find formal charges of an atom in a molecule?
+		\begin{itemize}
+			\item{Identify atoms with abnormal number of bonds, can be more or fewer}
+			\item{Calculate the formal charge by using the following formula:}
+				\[FC = N_{valence\:electron\:in\:free\:atom} - \frac{N_{bonding\:electron}}{2} - N_{nonbonding\:electron}\]
+		\end{itemize}
+		
+		Back to ammonium, we have:
+		\begin{itemize}
+			\item{N has five electron as a free atom}
+			\item{There are eight electron contributing to bonding (four bonds, each has two)}
+			\item{N had no nonbonding electrons}
+		\end{itemize}
+		 Thus using the formula, we have:
+		 	\[FC_N = 5 - \frac{8}{2} - 0 = +1\]
+			
+		Not just that, some structures may have multiples atoms with formal charge. For instance:
+		\begin{center}
+			\chemname{\chemfig{R-\chemabove{N}{\scriptstyle\oplus}(=[:35]O)-[:-35]{\chemabove{\chlewis{35,215,315}{O}}{\scriptstyle\hspace{6mm}\ominus}}}}{Nitro functional group}
+		\end{center}
+		
+		It is fairly easy to recognize that the N and O atoms both have obscure number of bonds. We again calculate the formal charge of each atom using the formula:
+			
+			\[FC_N = 5 - \frac{8}{2} - 0 = +1\]
+			\[FC_O = 6 - \frac{2}{2} - 6 = -1\]
+		
+		Easy enough right? This can be confidently apply to other cases as well. Now let us move on to the most challenging basic concept in organic chemistry: resonance.
+		
+		\subsection{Resonance - Electron delocalization}
+			\subsubsection{Why do we need resonance structures?}
+		So far we have learnt how to draw organic substances in skeletal structures and how to assign formal charges to certain atoms. However, one problem arises from drawing compounds this way. Let us go through a few:
+		 \begin{figure}[H]
+		 \centering
+		 \captionsetup{justification=centering, margin=2cm}
+		 	\chemfig{R-\chemabove{N}{\scriptstyle\oplus}(=[:35]O)-[:-35]{\chemabove{\chlewis{35,215,315}{O}}{\scriptstyle\hspace{6mm}\ominus}}} \qquad
+			\chemfig{R-\chemabove{N}{\scriptstyle\oplus}(=[:-35]O)-[:35]{\chemabove{\chlewis{35,125,315}{O}}{\scriptstyle\hspace{6mm}\ominus}}}
+		\caption{Example 1: Which O atom should get the formal charge, left or right?}	
+		 \end{figure}
+		
+		\begin{figure}[H]
+		 \centering
+		 \captionsetup{justification=centering, margin=2cm}
+		 	\chemfig{*6(-=-=(-R)-=)} \qquad
+			\chemfig{*6(=-=-(-R)=-)}
+		\caption{Example 2: How should we draw phenyl group, left or right?}	
+		 \end{figure}
+		
+		The answer should be obvious, but counterintuitive: the two O atoms both share the formal charge (first example), and all the C-C bonds in the ring are identical to each other. The phenomenon can be observed by measuring the electron density in individual atom on the compound. This concludes that \textit{neither} of the two structures for each example \textit{truly} depicts the \textit{real} structure (we call these unreal structure \textbf{resonance forms}). The \textit{real} structure is the hybrid of the two structures above, a \textbf{resonance hybrid}. Bear in mind that the real substance does not switch from one resonance form to another, rather exist as a resonance hybrid. The reason we sometimes do not draw structures as resonance hybrids is practical representation, and as we assume so.
+
+		\begin{figure}[H]
+		 \centering
+		 \captionsetup{justification=centering, margin=2cm}
+		 	\chemfig{**6(----(-R)--)}
+		\caption{The \textit{"real"}	phenyl structure}
+		 \end{figure}
+		
+			\subsubsection{Rules to drawing resonance}
+		This section is adapted and simplified from Organic Chemistry by John McMurry\footnote{McMurry, J. (2010). Organic chemistry (pp. 37-39). Belmont, CA: Cengage Brooks/Cole.}. \\
+		
+		\textbf{Rule 1.} Resonance forms are not real. Although a compound may have several resonance forms, they only depicts the \textit{movement} of electrons (we they may go in the molecule). \\
+		
+		\textbf{Rule 2.} The relative positions and the hybridization of the atoms in a molecule are unchanged. Only the positions of $\pi$ bonds and free electrons change. \\
+		
+		\textbf{Rule 3.} Different resonance forms do not have to be equivalent. Equivalent means the same (such as the example of nitro group). They can be different and still contribute to the set of resonance forms. \\
+		
+		\textbf{Rule 4.} Valance bond theory, or the octet theory, is still applied. \\
+		
+		\begin{center}
+			\chemname{\chemfig{C-[:30]\chemabove{C}{\scriptstyle\hspace{6mm}\ominus}(=[:90]O)=[:-30]O}}{Not a valid resonance form}
+		\end{center}
+		
+		\textbf{Rule 5.} The larger the number of resonance forms, the more stable a substance is, due to the "spreading" of electrons throughout the molecule. \\
+		\\
+		Some additional rules I found useful when studying resonance: \\
+		
+		\textbf{Rule 6.} The charges follow the flow of the electrons. If an atom loses electron(s), the charge changes toward positive (negative to neutral or neutral to positive), and vice versa. \\
+		
+		\textbf{Rule 7.} Electrons may not pass a distance of two atoms or more.
+		
+			\subsubsection{How to draw resonance}
+			
+			We use a double headed, usually curved, arrow ($\rightarrow$) to depict the movement of \textit{a pair} of electrons (not to be confused with a single headed arrow ($\rightharpoonup$) which depicts \textit{a single} electron). The tail shows where the electrons start, and the head shows where the electrons stop. \\
+			
+			Example:
+			\begin{center}
+			\schemestart
+    \chemfig{*6(-=-@{C1}=[@{db1}](-[@{b1}]@{Cl}\lewis{0:2:4:,Cl})-=)}
+    \arrow{<->}
+    \chemfig{*6(-@{C2}=[@{db2}]-[@{b2}](-[,.3,,,draw=none]@{ch1}\fscrm)-(=Cl|^{\fplus})-=)}
+    \arrow{<->}
+    \chemfig{*6(-[@{b3}](-[,.3,,,draw=none]@{ch2}\fscrm)-=-(=Cl|^{\fplus})-@{C3}=[@{db3}])}
+    \arrow{<->}
+    \chemfig{*6(=-=-(=Cl|^{\fplus})-(-[,.3,,,draw=none]\fscrm)-)}
+  \schemestop
+  \chemmove[red,->,shorten >=2pt, shorten <=2pt]{
+    \draw[shorten <=4pt] (Cl) .. controls +(180:8mm) and +(180:8mm) .. (b1) ;
+    \draw (db1) .. controls +(60:8mm) and +(0:8mm) .. (C1) ;
+    \draw (ch1) .. controls +(-30:8mm) and +(0:8mm) .. (b2) ;
+    \draw (db2) .. controls +(-60:8mm) and +(-90:8mm) .. (C2) ;
+    \draw (ch2) .. controls +(-120:8mm) and +(-150:8mm) .. (b3) ;
+    \draw (db3) .. controls +(180:4mm) and +(120:4mm) .. (C3) ;
+  }
+			\end{center}
+			
+			\subsubsection{Implication}
+			Resonance can help us predict certain physicochemical properties of a compound. Below are some common examples, but not limited to, on what we can imply from resonance: \\
+			
+			\textbf{Stability.} The more delocalized the charges (or electrons), the stabler the compound. We do not want the charges to be localized in one atom.\\
+			
+			\textbf{Reactivity.} The stabler the compound, the lower reactivity. We can possibly, if not always, use this in acid-base theories and other organic reaction mechanism. \\
+			
+			
+			
+\newpage
+
+\section{Functional groups and their intermolecular forces}
+	\subsection{What is a functional group?}
+		It can be an atom, or a group of atoms, that has \textit{distincttive} reactivity. \\
+		
+		Examples:
+		\begin{itemize}
+			\item{The benzene ring has aromatic properties with little additive property despite having double bonds. This should make the benzene ring a distinctive "reaction group".} 
+			\begin{center}
+				\chemname{\chemfig{*6(-=-=-=)}}{Benzene}
+			\end{center}
+			\item{The carboxylic acid is "composed" from one carbonyl group and one hydroxyl group, but possesses reactivity of an acid which is not present in the other two. This should make the carboxylic acid a distinctive "reaction group".}
+			\begin{center}
+				\chemname{\chemfig{R-C(-[:-30]OH)=[:30]O}}{Carboxylic acid}
+			\end{center}
+		\end{itemize}
+		
+		These functional groups contribute prominently to the compound's overall physicochemical properties, reactivity, metabolism, and bioactivity.
+
+	\subsection{Functional groups in detail}
+		These are definitely not all, but if you just want to study pharmacy, then this should be more than enough.
+		
+		\subsubsection{Hydrocarbons}
+		The name can refer to a class of organic compound made up of carbon (C) and hydrogen (H) atoms. They can be the scaffold of the drug molecules, or in many cases, they are involved in the drug's therapeutics and act as a functional group. \\
+		
+		The carbon frameworks exist in different form, can be branched, linear, cyclic, saturated, unsaturated or aromatic. Despite being abundant in terms of structure, they are all non-polar, since electronegativity of C and H are similar. This part of the molecule will be likely to interact with hydrophobic part of target proteins. \\
+		
+		\subsubsection{Alcohols}
+		Our common drinkable alcohol ($C_2H_5OH$) is an alcohol, but there are more to it. The term refers to a chemical class with a hydroxyl functional group:
+		\begin{center}
+			\chemname{\chemfig{-OH}}{Hydroxyl group} \hfill
+			\chemname{\chemfig{[:30]-[:-30]-OH}}{Ethanol, or alcohol}
+		\end{center}
+		Since the O-H bond is very polar (a dipole), it can interact with another hydroxyl group. Imagine two magnets, with O atom is the north pole and H atom is the south pole. The two magnets now will be attracted to each other. The interaction is called hydrogen bond (since the interaction involves hydrogen), and is a subtype of dipole-dipole interaction 
+		\begin{center}
+			\chemname{\chemfig{O(-[:90]CH_3)-H-[,,,,red, dash pattern=on 2pt off 2pt]O(-[:-90]CH_3)-H}}{Hydrogen bond}
+		\end{center}
+		Depending how many C atoms binding to C-OH, we classify the alcohol as primary, secondary and tertiary:
+		\begin{center}
+			\chemname{\chemfig{CH_3-CH_2-OH}}{Primary} \hfill
+			\chemname{\chemfig{CH_3-CH(-[:-90]CH_3)-OH}}{Secondary} \hfill
+			\chemname{\chemfig{CH_3-C((-[:-90]CH_3)-[:90]CH_3)-OH}}{Tertiary}
+		\end{center}
+		
+		\subsubsection{Ethers}
+		Inserting an O atom in between two carbons gives us an ether group. There are no special intermolecular forces involve with ether, apart from wear dipole-dipole and Van de Waals forces.
+		\begin{center}
+			\chemname{\chemfig{C_1-[:30]O-[:-30]C_2}}{Ether}
+		\end{center}
+		
+		\subsubsection{Amines}
+		Quite similar to alcohols, replacing the O with an N gives us an amine functional group. However, be careful since there are 3 bonds surrounding N instead of just two as in alcohol. The amines can also be classified as primary, secondary and tertiary as well, and also can form hydrogen bonds with neighboring molecules (like alcohol).
+		\begin{center}
+			\chemname{\chemfig{CH_3-NH_2}}{Primary} \hfill
+			\chemname{\chemfig{CH_3-HN-CH_3}}{Secondary} \hfill
+			\chemname{\chemfig{CH_3-N((-[:90]CH_3)-CH_3)}}{Tertiary}
+		\end{center}
+		Amine has a lone pair of electron, thus can accept a proton. This makes amine a Bronsted base. We will touch more on acid and base in the next chapter.
+		\begin{center}
+			\chemname{\chemfig{R-[:30]\chlewis{90}{N}(<[:-50]H)-[:-15]H}}{Amine} \hfill
+			\chemname{\chemfig{R-[:30]\chemabove{N}{\scriptstyle\hspace{4mm}\oplus}((-[:90]H)<[:-50]H)<:[:-15]H}}{Aminium ion}
+		\end{center}
+		
+		\subsubsection{Carboxylic acids}
+		We was briefly introduced to the carboxylic acid at the beginning of this chapter. It can donate a proton, thus make it a Bronsted acid.
+		\begin{center}
+			\chemname{\chemfig{R-[:30](-[:-30]OH)=[:90]O}}{Carboxylic acid} \hfill
+			\chemname{\chemfig{-[:30](=[:90]O)-[:330]\chemabove{O}{\scriptstyle\hspace{6mm}\ominus}}}{Carboxylate ion}
+		\end{center}
+		
+		Since it has an O-H bond, it can form hydrogen bond with another carboxylic group, especially we can have this dimer:
+		\begin{center}
+			\chemname{\chemfig{-[:30]=[:90]O-[:30,,,,red, dash pattern=on 2pt off 2pt]HO-[:330](-[:30])=[:270]O-[:210,,,,red, dash pattern=on 2pt off 2pt]OH(-[:150])}}{Dimer hydrogen bonding of carboxylic acid}
+		\end{center}
+		
+		\subsubsection{Aldehydes and Ketones}
+		Aldehyde and ketone both have a C=O moiety, though:
+		\begin{itemize}
+			\item{Aldehyde has one H atom and one carbon chain attached to C=O}
+			\item{Ketone has two carbon chains attached to C=O}
+		\end{itemize}
+		
+		\begin{center}
+			\chemname{\chemfig{R_1-[:30](=[:90]O)-[:330]H}}{Aldehyde} \hfill
+			\chemname{\chemfig{R_1-[:30](=[:90]O)-[:330]R_2}}{ketone}
+		\end{center}
+		Between these groups may have weak dipole-dipole force, but not hydrogen bond.
+		
+		\subsubsection{Amides}
+		Amide is considered a carboxylic acid derivative sue to its anatomical resemblance: just replace the O in hydroxyl group and we have an amide group.
+		\begin{center}
+			\chemname{\chemfig{R_1-[:30](=[:90]O)-[:330]N(-[:30]R_2)-[:270]R_3}}{Amide, with $R_1$, $R_2$ and $R_3$ are C or H}
+		\end{center}
+		
+		
+\newpage
+
+
+\section{Ionization, \pH\ and \pKa\ }
+
+\newpage
+
+\section{Solubility and dissolution}
+
+\newpage
+
+\section{Chemical stability mechanisms}
+
+\newpage
+
+\section{Chemical stability kinetics}
+
+\newpage
+
+\section{Drug absorption}
+
+\newpage
+
+\section{Alternative formulations and routes of administration}
+
+\newpage
+
+\end{document}

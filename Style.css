@@ -439,6 +439,7 @@ p {
     .left, .right {width: 100%;}
     .card {margin-left: 0%; width: 100%;}
     .caption {margin-left: 20%; margin-right: 20%;}
+    h2{margin-left: 0%;}
 }
 
 @media only screen and (max-width: 450px) {
@@ -449,6 +450,7 @@ p {
     .list, .listresearch{margin-left: 5%; margin-right: 5%;}
     .left, .right {width: 100%;}
     .card {margin-left: 0%; width: 100%;}
+    h2{margin-left: 0%;}
 }
   /*.dropbtn {font-size: 9px; width: 100%}
   .dropdown {width: 100%;}

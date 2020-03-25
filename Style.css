@@ -46,6 +46,11 @@ img {
   height: auto;
 }
 
+audio{
+    width: 50%;
+    max-width: 400px;
+}
+
 .caption{
     font-size: 12px;
     font-style: italic;
@@ -434,8 +439,8 @@ p {
     .collapsible, .collapsible:after, .content {margin-left:0%; margin-right: 0%;}
     .para, .ul, p, .abstract, h4 {margin-left:0%; margin-right: 0%;}
     .nice-line {margin-left:0%; margin-right:0%;}
-    .list, .listresearch, blockquote {margin-left: 10%; margin-right: 10%;}
-    .list, .listresearch{margin-left: 5%; margin-right: 5%;}
+    blockquote {margin-left: 5%; margin-right: 0%;}
+    .list, .listresearch{margin-left: 0%; margin-right: 0%;}
     .left, .right {width: 100%;}
     .card {margin-left: 0%; width: 100%;}
     .caption {margin-left: 20%; margin-right: 20%;}
@@ -446,11 +451,12 @@ p {
     .collapsible, .collapsible:after, .content {margin-left:0%; margin-right: 0%;}
     .para, .ul, p, .abstract, h4 {margin-left:0%; margin-right: 0%;}
     .nice-line {margin-left:0%; margin-right:0%;}
-    .list, .listresearch, blockquote {margin-left: 10%; margin-right: 10%;}
-    .list, .listresearch{margin-left: 5%; margin-right: 5%;}
+    blockquote {margin-left: 10%; margin-right: 10%;}
+    .list, .listresearch{margin-left: 0%; margin-right: 0%;}
     .left, .right {width: 100%;}
     .card {margin-left: 0%; width: 100%;}
     h2{margin-left: 0%;}
+    audio{width: 90%;}
 }
   /*.dropbtn {font-size: 9px; width: 100%}
   .dropdown {width: 100%;}

@@ -440,7 +440,8 @@ p {
     .para, .ul, p, .abstract, h4 {margin-left:0%; margin-right: 0%;}
     .nice-line {margin-left:0%; margin-right:0%;}
     blockquote {margin-left: 5%; margin-right: 0%;}
-    .list, .listresearch{margin-left: 0%; margin-right: 0%;}
+    .listresearch{margin-left: 0%; margin-right: 0%;}
+    .list{margin-left: 0%; margin-right: 0%; text-align: left;}
     .left, .right {width: 100%;}
     .card {margin-left: 0%; width: 100%;}
     .caption {margin-left: 20%; margin-right: 20%;}
@@ -452,7 +453,8 @@ p {
     .para, .ul, p, .abstract, h4 {margin-left:0%; margin-right: 0%;}
     .nice-line {margin-left:0%; margin-right:0%;}
     blockquote {margin-left: 10%; margin-right: 10%;}
-    .list, .listresearch{margin-left: 0%; margin-right: 0%;}
+    .listresearch{margin-left: 0%; margin-right: 0%;}
+    .list{margin-left: 0%; margin-right: 0%; text-align: left;}
     .left, .right {width: 100%;}
     .card {margin-left: 0%; width: 100%;}
     h2{margin-left: 0%;}

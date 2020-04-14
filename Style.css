@@ -145,7 +145,7 @@ blockquote{
 
 
 h5  {
-  text-align: center;
+  text-align: left;
   font-size: 12px;
   font-weight: normal;
 } /* use for last update*/
@@ -157,7 +157,7 @@ div.sticky2 {
   background-color: white;
     padding-bottom: 10px;
     padding-top: 10px;
-    z-index: +1;
+    z-index: -1;
 }
 
 h6  {

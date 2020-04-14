@@ -474,7 +474,7 @@ p {
     .card {margin-left: 0%; width: 100%;}
     h2{margin-left: 0%;}
     audio{width: 90%;}
-    .profilepic{width: 100%; height: auto; margin-left: 0%; margin-right: 0%; padding-left: 10; padding-right: 10; padding-bottom: 5;}
+    .profilepic{width: 100%; height: auto; margin-left: 0%; margin-right: 0%; padding-left: 0px; padding-right: 0px; padding-bottom: 5px;}
 }
   /*.dropbtn {font-size: 9px; width: 100%}
   .dropdown {width: 100%;}

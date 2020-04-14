@@ -145,10 +145,20 @@ blockquote{
 
 
 h5  {
-  text-align: left;
+  text-align: center;
   font-size: 12px;
   font-weight: normal;
 } /* use for last update*/
+
+div.sticky2 {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    z-index: +1;
+}
 
 h6  {
   margin-left: 5%;

@@ -148,17 +148,10 @@ h5  {
   text-align: left;
   font-size: 12px;
   font-weight: normal;
-} /* use for last update*/
-
-div.sticky2 {
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;
-  background-color: white;
+    position: fixed;
+    bottom: 0px;
     padding-bottom: 10px;
-    padding-top: 10px;
-    z-index: -1;
-}
+} /* use for last update*/
 
 h6  {
   margin-left: 5%;

@@ -1,9 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body {
   /*background-color: #D6EAF8;*/
   background-color: #ffffff;
   font-size: 16px;
   color: black;
-  font-family: 'Palatino', serif;
+  font-family: 'Alegreya', serif;
 }
 
 div.sticky {
@@ -67,8 +70,8 @@ audio{
     font-size: 12px;
     font-style: italic;
     text-align: center;
-    font-family: 'Palatino', serif;
-    margin-top: 4px;
+    font-family: 'Alegreya', serif;
+    margin-top: 3px;
     margin-left: 25%;
     margin-right: 25%;
 }
@@ -81,24 +84,27 @@ h1  {
 }
 
 h2  {
-  font-size: 17px;
+  font-size: 22px;
   text-align: left;
   margin-left: 20%;
   margin-right: 20%;
+    font-family: 'Alegreya', serif;
 } /* use for various headings in reasearch, blogs*/
 
 h3  {
-  font-size: 17px;
+  font-size: 20px;
   text-align: center;
   margin-left: 20%;
   margin-right: 20%;
+    font-family: 'Alegreya', serif;
 }
 
 h4{
-  font-size: 20px;
+  font-size: 27px;
   font-weight: 600;
     margin-left: 25%;
     margin-right: 25%;
+    font-family: 'Alegreya', serif;
 } /* use for article titles in reasearch, blogs*/
 
 blockquote{
@@ -106,6 +112,7 @@ blockquote{
     margin-right: 20%;
     text-align: justify;
     font-style: italic;
+    font-family: 'Alegreya', serif;
 }
 
 .para  {
@@ -114,6 +121,7 @@ blockquote{
   text-align: justify;
   margin-left: 25%;
   margin-right: 25%;
+    font-family: 'Alegreya', serif;
 }
 
 .list {
@@ -122,6 +130,7 @@ blockquote{
     text-align: justify;
     margin-left: 15%;
     margin-right: 15%;
+    font-family: 'Alegreya', serif;
 }
 
 .listresearch {
@@ -130,12 +139,14 @@ blockquote{
     text-align: justify;
     margin-left: 25%;
     margin-right: 25%;
+    font-family: 'Alegreya', serif;
 }
 
 .abstract {
     font-size: 16px;
     font-weight: normal;
     text-align: justify;
+    font-family: 'Alegreya', serif;
 }
 
 
@@ -145,12 +156,14 @@ h5  {
   font-weight: normal;
       margin-left: 25%;
   margin-right: 25%;
+    font-family: 'Alegreya', serif;
 
 } /* use for last update*/
 
 h6  {
   margin-left: 5%;
   font-size: 16px;
+    font-family: 'Alegreya', serif;
 }
 
 .ul{
@@ -199,7 +212,7 @@ p {
   margin-left: 20%;
     margin-right: 20%;
     text-align: justify;
-  font-family: 'Palatino', serif;
+  font-family: 'Alegreya', serif;
 }
 
 .logo{
@@ -223,7 +236,7 @@ p {
   border-radius: 0px;
   font-weight: bold;
   text-align: center;
-  font-family: 'Palatino', serif;
+  font-family: 'Alegreya', serif;
   color: black;
   /*margin-left: 10%;
   margin-right: 10%;*/
@@ -258,7 +271,7 @@ p {
 .dropbtn {
     background-color: #ffffff;
     padding: 1px 20px;
-    font-family: 'Palatino', serif;
+    font-family: 'Alegreya', serif;
     color: black;
     font-size: 18px;
     font-weight: bold;
@@ -354,7 +367,7 @@ p {
   margin-right: 25%;
   border: none;
   font-size: 16px;
-  font-family: 'Palatino', serif;
+  font-family: 'Alegreya', serif;
   cursor: pointer;
 }
 

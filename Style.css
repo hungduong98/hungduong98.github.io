@@ -443,17 +443,18 @@ p {
     background-color: white;
     padding: 7px;
     margin-top: 10px;
-    border: 1px solid #73AD21;
-    border-radius: 7px;
+    /*border: 1px solid #73AD21;*/
     margin-left: 25%;
     margin-right: 25%;
+    border-top: 1px solid #BCBCBC;
 }
 
 .textthumbnail {
     margin-top: 10px;
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: normal;
+    color: dimgray;
 }
 
 .thumbnail {

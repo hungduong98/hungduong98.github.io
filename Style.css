@@ -4,7 +4,7 @@
 body {
   /*background-color: #D6EAF8;*/
   background-color: #ffffff;
-  font-size: 16px;
+  font-size: 18px;
   color: black;
   font-family: 'Alegreya', serif;
 }
@@ -74,21 +74,23 @@ audio{
     margin-top: 3px;
     margin-left: 25%;
     margin-right: 25%;
+    color: dimgrey;
 }
 
 
 h1  {
-  font-size: 34px;
+  font-size: 40px;
   text-align: center;
   font-family: 'Courier New', Monospace;
 }
 
 h2  {
-  font-size: 22px;
+  font-size: 25px;
   text-align: left;
   margin-left: 20%;
   margin-right: 20%;
     font-family: 'Alegreya', serif;
+    margin-bottom: 0px;
 } /* use for various headings in reasearch, blogs*/
 
 h3  {
@@ -100,11 +102,13 @@ h3  {
 }
 
 h4{
-  font-size: 27px;
+  font-size: 37px;
   font-weight: 600;
     margin-left: 25%;
     margin-right: 25%;
     font-family: 'Alegreya', serif;
+    margin-bottom: 1px;
+    margin-top: 4px;
 } /* use for article titles in reasearch, blogs*/
 
 blockquote{
@@ -116,7 +120,7 @@ blockquote{
 }
 
 .para  {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: normal;
   text-align: justify;
   margin-left: 25%;
@@ -273,7 +277,7 @@ p {
     padding: 1px 20px;
     font-family: 'Alegreya', serif;
     color: black;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     border-right: 0px solid #555;
     border-left: 0px solid #555;

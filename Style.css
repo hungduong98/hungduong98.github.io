@@ -55,6 +55,12 @@ img {
   height: auto;
 }
 
+.responsiveblogvertical{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
 .responsivevid{
       width: 100%;
   max-width: 600px;

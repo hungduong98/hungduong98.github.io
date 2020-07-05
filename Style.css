@@ -446,6 +446,13 @@ p {
 
 /* COLUMNS FOR ABSTRACT */
 
+.compare{
+    columns: 450px 2;
+    column-gap: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
 .card {
     background-color: white;
     padding: 7px;

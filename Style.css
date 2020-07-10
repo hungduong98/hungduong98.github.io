@@ -447,10 +447,11 @@ p {
 /* COLUMNS FOR ABSTRACT */
 
 .compare{
-    columns: 450px 2;
+    columns: 450px ;
     column-gap: 10px;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
 }
 
 .card {
@@ -488,6 +489,7 @@ p {
     .card {margin-left: 0%; width: 100%;}
     .caption {margin-left: 20%; margin-right: 20%;}
     h2{margin-left: 0%; margin-right: 0%}
+    .compare{columns: 1; margin-left: 0%; margin-right: 0%;}
 }
 
 @media only screen and (max-width: 450px) {
@@ -502,6 +504,7 @@ p {
     h2{margin-left: 0%; margin-right: 0%}
     audio{width: 90%;}
     .profilepic{width: 100%; height: auto; margin-left: 0%; margin-right: 0%; padding-left: 0px; padding-right: 0px; padding-bottom: 5px;}
+    .compare{columns: 1; margin-left: 0%; margin-right: 0%;}
 }
   /*.dropbtn {font-size: 9px; width: 100%}
   .dropdown {width: 100%;}
